@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>AfricaMiaApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Africa Mia</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+	    <div class="header">
+	    	<%=image_tag("3.png", alt: "Example Image")%>
+	    	<!--<img src="/assets/images/3.png" width="961" height="127"><!-- end .header -->
+	    </div>
+        <section>
+            <%= yield %>
+        </section>
+        <div class="footer">
+            <p>2014 - Adec Fire, Inc</p>
+        </div>
+    </body>
 </html>

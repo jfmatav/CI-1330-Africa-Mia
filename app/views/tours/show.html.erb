@@ -2,12 +2,12 @@
 
 <p>
   <strong>Fecha:</strong>
-  <%= @tour.fecha %>
+  <%= @tour.fecha.strftime("%d/%m/%Y") %>
 </p>
 
 <p>
   <strong>Hora:</strong>
-  <%= @tour.hora %>
+  <%= @tour.hora.strftime("%I:%M%p") %>
 </p>
 
 <p>
@@ -16,8 +16,13 @@
 </p>
 
 <p>
-  <strong>Id estado:</strong>
-  <%= @tour.id_estado %>
+  <strong>Estado:</strong>
+  <% if @tour.id_estado==1 %>
+    Disponible
+  <% end %>
+  <% if @tour.id_estado==2 %>
+    Sin Cupo
+  <% end %>
 </p>
 
 <p>
@@ -25,5 +30,5 @@
   <%= @tour.cupo_disponible %>
 </p>
 
-<%= link_to 'Edit', edit_tour_path(@tour) %> |
-<%= link_to 'Back', tours_path %>
+<%= link_to 'Editar', edit_tour_path(@tour) %> |
+<%= link_to 'Atras', tours_path %>

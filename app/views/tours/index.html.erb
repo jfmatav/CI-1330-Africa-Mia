@@ -1,33 +1,44 @@
-<h1>Listing tours</h1>
+<link href="/standart.css" type="text/css" rel="stylesheet">
 
-<table>
+<h1>Tours Disponibles</h1>
+
+<table class="reference" border="1" style="width:500px">
   <thead>
     <tr>
       <th>Fecha</th>
       <th>Hora</th>
-      <th>Cupo total</th>
-      <th>Id estado</th>
+      <th>Estado</th>
       <th>Cupo disponible</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @tours.each do |tour| %>
+    <% t = @tours.sort_by { |tour| [tour.fecha] } %>
+    <% t.each do |tour| %>
       <tr>
-        <td><%= tour.fecha %></td>
-        <td><%= tour.hora %></td>
-        <td><%= tour.cupo_total %></td>
-        <td><%= tour.id_estado %></td>
+        <td><%= tour.fecha.strftime("%d/%m/%Y")  %></td>
+        <td><%= tour.hora.strftime("%I:%M%p") %></td>
+        <% if tour.id_estado==1 %>
+          <td>Disponible</td>
+        <% end %>
+        <% if tour.id_estado==2 %>
+          <td>Sin Cupo</td>
+        <% end %>
         <td><%= tour.cupo_disponible %></td>
-        <td><%= link_to 'Show', tour %></td>
-        <td><%= link_to 'Edit', edit_tour_path(tour) %></td>
-        <td><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', tour %></td>
+        <% if 1==0 %>
+          <td><%= link_to 'Editar', edit_tour_path(tour) %></td>
+          <td><%= link_to 'Eliminar', tour, method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+<% if 1==0 %>
+  <%= link_to 'Nuevo Tour', new_tour_path %>
+<% end %>
 
-<%= link_to 'New Tour', new_tour_path %>
+
