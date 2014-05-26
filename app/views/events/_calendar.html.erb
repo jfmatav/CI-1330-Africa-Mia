@@ -1,0 +1,4 @@
+<%= month_calendar events: events do |date, events| %>
+  <%= link_to date.strftime("%d"), tours_path(params[date.strftime("%d")]) %>
+<% end %>
+
