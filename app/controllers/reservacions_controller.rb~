@@ -15,7 +15,7 @@ class ReservacionsController < ApplicationController
   # GET /reservacions/new
   def new
     @reservacion = Reservacion.new
-    @reservacion.id_tour = params[:id_tour]
+    @reservacion.id_tour = params[:id_tour]    
   end
 
   # GET /reservacions/1/edit
@@ -31,6 +31,11 @@ class ReservacionsController < ApplicationController
       if @reservacion.save
         format.html { redirect_to @reservacion, notice: 'Reservacion was successfully created.' }
         format.json { render :show, status: :created, location: @reservacion }
+        @tour = Tour.find(@reservacion.id_tour)
+	@tour.cupo_disponible = @tour.cupo_disponible - 
+				(@reservacion.num_cupos_nino
+				+@reservacion.num_cupos_adulto)
+	@tour.update(cupo_disponible)
       else
         format.html { render :new }
         format.json { render json: @reservacion.errors, status: :unprocessable_entity }
@@ -71,6 +76,8 @@ class ReservacionsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def reservacion_params
       params.require(:reservacion).permit(:id_tour, :num_cupos_adulto, :num_cupos_nino, :id_cliente, :id_estado)
-      params.require(:tour).permit(:id_tour, :fecha, :hora)
+      if params[:tour] then
+          params.require(:tour).permit(:id_tour, :fecha, :hora)
+      end
     end
 end

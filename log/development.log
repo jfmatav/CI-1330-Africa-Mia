@@ -11761,3 +11761,195 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12
 
 
 Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/reservacions/new?fecha=2014-01-31&hora=2000-01-01+16%3A00%3A00+UTC&id_tour=1" for 127.0.0.1 at 2014-06-02 16:04:42 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReservacionsController#new as HTML
+  Parameters: {"fecha"=>"2014-01-31", "hora"=>"2000-01-01 16:00:00 UTC", "id_tour"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered reservacions/_form.html.erb (66.4ms)
+  Rendered reservacions/new.html.erb within layouts/application (151.6ms)
+Completed 200 OK in 677ms (Views: 555.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/reservacions/new?fecha=2014-01-31&hora=2000-01-01+16%3A00%3A00+UTC&id_tour=1" for 127.0.0.1 at 2014-06-02 16:09:09 -0600
+Processing by ReservacionsController#new as HTML
+  Parameters: {"fecha"=>"2014-01-31", "hora"=>"2000-01-01 16:00:00 UTC", "id_tour"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered reservacions/_form.html.erb (8.3ms)
+  Rendered reservacions/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 123ms (Views: 83.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:09:19 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 4ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: tour):
+  app/controllers/reservacions_controller.rb:79:in `reservacion_params'
+  app/controllers/reservacions_controller.rb:28:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.5ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:09:54 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 28ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: tour):
+  app/controllers/reservacions_controller.rb:79:in `reservacion_params'
+  app/controllers/reservacions_controller.rb:28:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:11:54 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 27ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: tour):
+  app/controllers/reservacions_controller.rb:79:in `reservacion_params'
+  app/controllers/reservacions_controller.rb:28:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:12:17 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 28ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: tour):
+  app/controllers/reservacions_controller.rb:79:in `reservacion_params'
+  app/controllers/reservacions_controller.rb:28:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:13:05 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Unpermitted parameters: utf8, authenticity_token, reservacion, commit
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "reservacions" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-06-02 22:13:05.392374"], ["updated_at", "2014-06-02 22:13:05.392374"]]
+  [1m[36m (127.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mTour Load (0.2ms)[0m  SELECT  "tours".* FROM "tours"  WHERE "tours"."id" = ? LIMIT 1  [["id", "id_tour"]]
+Completed 404 Not Found in 185ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with 'id'=id_tour):
+  app/controllers/reservacions_controller.rb:34:in `block in create'
+  app/controllers/reservacions_controller.rb:30:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:14:44 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Unpermitted parameters: utf8, authenticity_token, reservacion, commit
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "reservacions" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-06-02 22:14:44.973060"], ["updated_at", "2014-06-02 22:14:44.973060"]]
+  [1m[35m (112.1ms)[0m  commit transaction
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT  "tours".* FROM "tours"  WHERE "tours"."id" = ? LIMIT 1[0m  [["id", "id_tour"]]
+Completed 404 Not Found in 162ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with 'id'=id_tour):
+  app/controllers/reservacions_controller.rb:34:in `block in create'
+  app/controllers/reservacions_controller.rb:30:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:15:26 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 28ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: tour):
+  app/controllers/reservacions_controller.rb:79:in `reservacion_params'
+  app/controllers/reservacions_controller.rb:28:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:18:23 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "reservacions" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-06-02 22:18:24.052078"], ["updated_at", "2014-06-02 22:18:24.052078"]]
+  [1m[35m (118.2ms)[0m  commit transaction
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT  "tours".* FROM "tours"  WHERE "tours"."id" = ? LIMIT 1[0m  [["id", "id_tour"]]
+Completed 404 Not Found in 168ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with 'id'=id_tour):
+  app/controllers/reservacions_controller.rb:34:in `block in create'
+  app/controllers/reservacions_controller.rb:30:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started POST "/reservacions" for 127.0.0.1 at 2014-06-02 16:19:41 -0600
+Processing by ReservacionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "reservacion"=>{"num_cupos_adulto"=>"3", "num_cupos_nino"=>"3", "id_cliente"=>"3", "id_estado"=>"0"}, "commit"=>"Create Reservacion"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "reservacions" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-06-02 22:19:42.169296"], ["updated_at", "2014-06-02 22:19:42.169296"]]
+  [1m[36m (183.1ms)[0m  [1mcommit transaction[0m
+Completed 404 Not Found in 230ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour without an ID):
+  app/controllers/reservacions_controller.rb:34:in `block in create'
+  app/controllers/reservacions_controller.rb:30:in `create'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+DEPRECATION WARNING: AbstractController::Helpers::ClassMethods::MissingHelperError is deprecated! Use AbstractController::Helpers::MissingHelperError instead. (called from bin/rails:in `call':)
+DEPRECATION WARNING: AbstractController::Helpers::ClassMethods::MissingHelperError is deprecated! Use AbstractController::Helpers::MissingHelperError instead. (called from bin/rails:in `call':)
+DEPRECATION WARNING: AbstractController::Helpers::ClassMethods::MissingHelperError is deprecated! Use AbstractController::Helpers::MissingHelperError instead. (called from bin/rails:in `call':)

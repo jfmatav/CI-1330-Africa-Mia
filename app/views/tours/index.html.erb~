@@ -33,7 +33,7 @@
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-mini btn-danger' %>
-	 <%=  link_to "Crear reservacion", new_reservacion_path(:id_tour => tour.id, :fecha => tour.fecha, :hora => tour.hora)%>
+	 <%=  link_to "Crear reservacion", new_reservacion_path(:id_tour => tour.id, :fecha => tour.fecha, :hora => tour.hora, :cupo_disponible => tour.cupo_disponible)%>
         </td>
       </tr>
     <% end %>
