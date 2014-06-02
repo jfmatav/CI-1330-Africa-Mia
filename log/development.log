@@ -9770,3 +9770,1994 @@ Processing by ToursController#new as HTML
   Rendered tours/_form.html.erb (98.2ms)
   Rendered tours/new.html.erb within layouts/application (132.2ms)
 Completed 200 OK in 261ms (Views: 245.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-02 15:34:20 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.1) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:34:32 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.1) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFacturas (20140602212513)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (19.4ms)[0m  [1mCREATE TABLE "facturas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fecha" date, "eNino" integer, "eAdulto" integer, "eAMayor" integer, "tNino" integer, "tAdulto" integer, "tAMayor" integer, "total" integer, "notas" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (17.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140602212513"]]
+  [1m[36m (140.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:37:53 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ToursController#index as HTML
+  Rendered tours/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 116ms
+
+SyntaxError (/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:36: syntax error, unexpected ',', expecting ')'
+...( link_to ('Crear reservacion', new_reservacion, :id => tour...
+...                               ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:36: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+...acion', new_reservacion, :id => tour.id)
+...                               ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:37: syntax error, unexpected '<', expecting keyword_end
+        </td>
+         ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:38: unknown regexp options - tr
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:39: syntax error, unexpected '<'
+    <% end );@output_buffer.safe_append='
+     ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:39: syntax error, unexpected ')', expecting keyword_end
+    <% end );@output_buffer.safe_append='
+            ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:47: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:49: syntax error, unexpected $end, expecting keyword_end):
+  actionview (4.1.1) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.1) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:38:30 -0600
+Processing by ToursController#index as HTML
+  Rendered tours/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:36: syntax error, unexpected ',', expecting ')'
+...( link_to ('Crear reservacion', new_reservacion, :id => tour...
+...                               ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:36: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+...acion', new_reservacion, :id => tour.id) );@output_buffer.sa...
+...                               ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:36: syntax error, unexpected ')', expecting keyword_end
+..._reservacion, :id => tour.id) );@output_buffer.safe_append='
+...                               ^):
+  actionview (4.1.1) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.1) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:39:42 -0600
+Processing by ToursController#index as HTML
+  [1m[35mTour Load (0.3ms)[0m  SELECT "tours".* FROM "tours"
+  Rendered tours/index.html.erb within layouts/application (16.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 738ms (Views: 735.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:43 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:44 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:44 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:39:44 -0600
+
+
+Started GET "/tours/new" for 127.0.0.1 at 2014-06-02 15:39:48 -0600
+Processing by ToursController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered tours/_form.html.erb (137.6ms)
+  Rendered tours/new.html.erb within layouts/application (147.5ms)
+Completed 200 OK in 223ms (Views: 211.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tours" for 127.0.0.1 at 2014-06-02 15:40:07 -0600
+Processing by ToursController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tVcJ1eta5ZxY3+YgAnL6YiUNINxyaKAJOKvxIx9GqdY=", "tour"=>{"fecha"=>"2014-01-31", "hora"=>"16:00", "cupo_total"=>"12", "id_estado"=>"0", "cupo_disponible"=>"12"}, "commit"=>"Create Tour"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "tours" ("created_at", "cupo_disponible", "cupo_total", "fecha", "hora", "id_estado", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-06-02 21:40:07.617256"], ["cupo_disponible", 12], ["cupo_total", 12], ["fecha", "2014-01-31"], ["hora", "2000-01-01 16:00:00.000000"], ["id_estado", 0], ["updated_at", "2014-06-02 21:40:07.617256"]]
+  [1m[35m (183.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/tours/1
+Completed 302 Found in 262ms (ActiveRecord: 184.5ms)
+
+
+Started GET "/tours/1" for 127.0.0.1 at 2014-06-02 15:40:07 -0600
+Processing by ToursController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTour Load (0.2ms)[0m  SELECT  "tours".* FROM "tours"  WHERE "tours"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tours/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 75ms (Views: 70.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:40:08 -0600
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:40:11 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.4ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (48.7ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (undefined local variable or method `new_reservacion' for #<#<Class:0x00000004cb21a0>:0x00000004dadd20>):
+    33:                       :method => :delete,
+    34:                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+    35:                       :class => 'btn btn-mini btn-danger' %>
+    36: 	 <%= link_to 'Crear reservacion', new_reservacion, :id => tour.id %>
+    37:         </td>
+    38:       </tr>
+    39:     <% end %>
+  app/views/tours/index.html.erb:36:in `block in _app_views_tours_index_html_erb__3525950213923877575_40737960'
+  app/views/tours/index.html.erb:19:in `_app_views_tours_index_html_erb__3525950213923877575_40737960'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:40:11 -0600
+Processing by ToursController#index as HTML
+  [1m[35mTour Load (0.3ms)[0m  SELECT "tours".* FROM "tours"
+  Rendered tours/index.html.erb within layouts/application (23.9ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined local variable or method `new_reservacion' for #<#<Class:0x00000004cb21a0>:0x00000004e28cf0>):
+    33:                       :method => :delete,
+    34:                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+    35:                       :class => 'btn btn-mini btn-danger' %>
+    36: 	 <%= link_to 'Crear reservacion', new_reservacion, :id => tour.id %>
+    37:         </td>
+    38:       </tr>
+    39:     <% end %>
+  app/views/tours/index.html.erb:36:in `block in _app_views_tours_index_html_erb__3525950213923877575_34765720'
+  app/views/tours/index.html.erb:19:in `_app_views_tours_index_html_erb__3525950213923877575_34765720'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:40:38 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (69.2ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (undefined local variable or method `path_new_reservacion' for #<#<Class:0x00000004cb21a0>:0x007f4f302b9248>):
+    33:                       :method => :delete,
+    34:                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+    35:                       :class => 'btn btn-mini btn-danger' %>
+    36: 	 <%= link_to 'Crear reservacion', path_new_reservacion, :id => tour.id %>
+    37:         </td>
+    38:       </tr>
+    39:     <% end %>
+  app/views/tours/index.html.erb:36:in `block in _app_views_tours_index_html_erb__3525950213923877575_69989043672360'
+  app/views/tours/index.html.erb:19:in `_app_views_tours_index_html_erb__3525950213923877575_69989043672360'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.4ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:40:57 -0600
+Processing by ToursController#index as HTML
+  [1m[35mTour Load (0.3ms)[0m  SELECT "tours".* FROM "tours"
+  Rendered tours/index.html.erb within layouts/application (23.9ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined local variable or method `path_new_reservacion' for #<#<Class:0x00000004cb21a0>:0x00000004a03328>):
+    33:                       :method => :delete,
+    34:                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+    35:                       :class => 'btn btn-mini btn-danger' %>
+    36: 	 <%= link_to path_new_reservacion, :id => tour.id %>
+    37:         </td>
+    38:       </tr>
+    39:     <% end %>
+  app/views/tours/index.html.erb:36:in `block in _app_views_tours_index_html_erb__3525950213923877575_38815100'
+  app/views/tours/index.html.erb:19:in `_app_views_tours_index_html_erb__3525950213923877575_38815100'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:41:34 -0600
+Processing by ToursController#index as HTML
+  Rendered tours/index.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 58ms
+
+SyntaxError (/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:41: unknown regexp options - tabl
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+...uffer.append=( link_to t('.new', :default => t("helpers.link...
+...                               ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+            :class => 'btn btn-primary' );@output_buffer.safe_append='
+                          ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+            :class => 'btn btn-primary' );@output_buffer.safe_append='
+                                       ^
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:46: unterminated string meets end of file
+/home/llamiro/Documents/UCR/I-2014/Ingenieria del Software/RubyProjects/CI-1330-Africa-Mia/app/views/tours/index.html.erb:46: syntax error, unexpected $end, expecting ')'):
+  actionview (4.1.1) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.1) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/llamiro/.gem/ruby/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.7ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (9.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 128ms (Views: 125.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:48 -0600
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.4ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (10.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 157ms (Views: 155.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:41:59 -0600
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 127ms (Views: 125.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:08 -0600
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (8.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 125ms (Views: 123.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:10 -0600
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 125ms (Views: 122.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:21 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:42:22 -0600
+
+
+Started GET "/tours/1" for 127.0.0.1 at 2014-06-02 15:42:36 -0600
+Processing by ToursController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTour Load (0.4ms)[0m  SELECT  "tours".* FROM "tours"  WHERE "tours"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tours/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 128ms (Views: 123.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:43:51 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (13.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/reservacions/new.1" for 127.0.0.1 at 2014-06-02 15:43:55 -0600
+Processing by ReservacionsController#new as 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered reservacions/_form.html.erb (20.2ms)
+  Rendered reservacions/new.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 150ms (Views: 142.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/reservacions/new.1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+Processing by ReservacionsController#new as 
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered reservacions/_form.html.erb (6.7ms)
+  Rendered reservacions/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 131ms (Views: 127.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:06 -0600
+
+
+Started GET "/reservacions" for 127.0.0.1 at 2014-06-02 15:45:09 -0600
+Processing by ReservacionsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mReservacion Load (0.3ms)[0m  SELECT "reservacions".* FROM "reservacions"
+  Rendered reservacions/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 150ms (Views: 146.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (9.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:45:17 -0600
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:52:06 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (23.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 201ms (Views: 195.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:06 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:06 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:06 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:52:07 -0600
+
+
+Started GET "/reservacions/new?id_tour=1" for 127.0.0.1 at 2014-06-02 15:52:10 -0600
+Processing by ReservacionsController#new as HTML
+  Parameters: {"id_tour"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered reservacions/_form.html.erb (8.6ms)
+  Rendered reservacions/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 171ms (Views: 148.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/reservacions/new?id_tour=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+Processing by ReservacionsController#new as HTML
+  Parameters: {"id_tour"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered reservacions/_form.html.erb (8.2ms)
+  Rendered reservacions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 125ms (Views: 121.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:02 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:54:03 -0600
+
+
+Started GET "/tours" for 127.0.0.1 at 2014-06-02 15:57:57 -0600
+Processing by ToursController#index as HTML
+  [1m[36mTour Load (0.6ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  Rendered tours/index.html.erb within layouts/application (25.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 188ms (Views: 182.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/reservacions/new?fecha=2014-01-31&hora=2000-01-01+16%3A00%3A00+UTC&id_tour=1" for 127.0.0.1 at 2014-06-02 15:58:00 -0600
+Processing by ReservacionsController#new as HTML
+  Parameters: {"fecha"=>"2014-01-31", "hora"=>"2000-01-01 16:00:00 UTC", "id_tour"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered reservacions/_form.html.erb (8.5ms)
+  Rendered reservacions/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 125ms (Views: 100.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservacions/new?fecha=2014-01-31&hora=2000-01-01+16%3A00%3A00+UTC&id_tour=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+Processing by ReservacionsController#new as HTML
+  Parameters: {"fecha"=>"2014-01-31", "hora"=>"2000-01-01 16:00:00 UTC", "id_tour"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered reservacions/_form.html.erb (8.8ms)
+  Rendered reservacions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 90ms (Views: 86.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/facturas.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/reservacions.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/facturas.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/reservacions.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600
+
+
+Started GET "/assets/tours.js?body=1" for 127.0.0.1 at 2014-06-02 15:59:12 -0600

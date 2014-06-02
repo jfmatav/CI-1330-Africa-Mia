@@ -16,8 +16,6 @@ class ReservacionsController < ApplicationController
   def new
     @reservacion = Reservacion.new
     @reservacion.id_tour = params[:id_tour]
-    @fecha = params[:fecha]
-    @hora = params[:hora]
   end
 
   # GET /reservacions/1/edit
