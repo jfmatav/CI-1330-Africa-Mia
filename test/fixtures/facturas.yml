@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2014-06-02
+  eNino: 1
+  eAdulto: 1
+  eAMayor: 1
+  tNino: 1
+  tAdulto: 1
+  tAMayor: 1
+  total: 1
+  notas: MyString
+
+two:
+  fecha: 2014-06-02
+  eNino: 1
+  eAdulto: 1
+  eAMayor: 1
+  tNino: 1
+  tAdulto: 1
+  tAMayor: 1
+  total: 1
+  notas: MyString

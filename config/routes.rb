@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :facturas
+
   devise_for :users
   resources :clientes
 
